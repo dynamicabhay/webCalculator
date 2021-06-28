@@ -95,8 +95,8 @@ body{
 }
 button{
     font-family: 'Spartan', sans-serif;
-    width: 90px;
-    height: 55px;
+    width: 21%;
+    height: 13%;
     padding: 10px;
     border-top: none;
     border-right: none;
@@ -135,8 +135,7 @@ button:hover{
 @media (max-width: 1400px){
     .container-main{
         width: 400px;
-        margin-left: 30%;
-        margin-right: 30%;
+        
     }
     .keypad button{
         width: 88px;
@@ -154,37 +153,23 @@ button:hover{
     margin-top: 30px;
 }
 
-@media (max-width: 550px){
-    .container-main{
-        width: 70%;
-        margin-left: 50px;
-
-    }
-    .keypad button{
-        width: 75px;
-        height: 50px;
-    }
-    #resetBtn{
-        width: 150px;
-    }
-    #equalsBtn{
-        width: 150px;
-    }
-}
-@media (max-width: 464px){
+@media (max-width: 400px){
     .container-main{
         width: 100%;
         
 
     }
     .keypad button{
-        width: 75px;
-        height: 50px;
+        width: 22%;
+        height: 12%;
     }
     #resetBtn{
         width: 150px;
     }
     #equalsBtn{
         width: 150px;
+    }
+    .toggle{
+        margin-right: 25px;
     }
 }
