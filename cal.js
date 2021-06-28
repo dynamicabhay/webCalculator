@@ -127,21 +127,18 @@ function changeTheme(i,styles){
     for(btn of buttons){
         btn.style.backgroundColor = style.keyBgColor;
         btn.style.color = style.keyColor;
-        btn.style.borderTop = "none";
-        btn.style.borderLeft = "none";
-        btn.style.borderRight = "none";
-
-        btn.style.borderColor = style.keyShadow;
+       
+        btn.style.boxShadow = `0 4px ${style.keyShadow}`;
     }
 
     reset.style.backgroundColor = style.resetColor;
-    reset.style.borderColor = style.resetShadow;
+    reset.style.boxShadow = `0 4px ${style.resetShadow}`;
     reset.style.color="white";
     equal.style.backgroundColor = style.equalColor;
     equal.style.color = "white";
-    equal.style.borderColor = style.equalKeyShadow;
+    equal.style.boxShadow = `0 4px ${style.equalKeyShadow}`;
     del.style.backgroundColor = style.delColor;
-    del.style.borderColor = style.delShadow;
+    del.style.boxShadow = `0 4px ${style.delShadow}`;
     del.style.color = "white";
     content.style.color = style.screenText;
     

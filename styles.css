@@ -99,16 +99,19 @@ button{
     width: 21%;
     height: 13%;
     padding: 10px;
+    border: none;
     /* border-top: none;
     border-right: none;
     border-left: none; */
     border-radius: 10px;
-    border-style: inset;
+    /* border-style: inset;
     border-bottom-width: 4px;
-    border-color: white;
+    border-color: white; */
+    box-shadow: 0 4px hsl(28, 16%, 65%);
     font-size: 32px;
     margin-top: 10px;
-    color: hsl(221, 14%, 31%)
+    color: hsl(221, 14%, 31%);
+    position: relative;
     
 }
 button:hover{
@@ -118,21 +121,24 @@ button:hover{
     font-size: 24px;
     color: white;
     width: 190px;
-    border-color: hsl(224, 28%, 35%);
+    box-shadow: 0 4px hsl(224, 28%, 35%);
     background-color: hsl(225, 21%, 49%);
+    position: relative;
 }
 #equalsBtn{
     color: white;
     font-size: 24px;
     width: 190px;
+    box-shadow: 0 4px hsl(6, 70%, 34%);
     background-color: hsl(6, 63%, 50%);
-    border-color: hsl(6, 70%, 34%);
+    position: relative
 }
 #del{
     color: white;
     font-size: 24px;
-    border-color: hsl(224, 28%, 35%);
+    box-shadow: 0 4px hsl(224, 28%, 35%);
     background-color: hsl(225, 21%, 49%);
+    position: relative;
 }
 
 
@@ -177,4 +183,25 @@ button:hover{
     .toggle{
         margin-right: 30px;
     }
+}
+
+button:active {
+    box-shadow: 0 2px hsl(28, 16%, 65%);
+    top: 2px;
+    
+}
+
+#equalsBtn:active {
+    box-shadow: 0 2px hsl(6, 70%, 34%);
+    top: 2px;
+}
+
+#del:active {
+    box-shadow: 0 2px hsl(224, 28%, 35%);
+    top: 2px;  
+}
+
+#resetBtn:active {
+    box-shadow: 0 2px hsl(224, 28%, 35%);
+    top: 2px;
 }
